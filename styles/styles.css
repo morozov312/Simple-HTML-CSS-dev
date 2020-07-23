@@ -1,1 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+#welcome{
+    width: 100vw;
+    height: 600px;
+    background-color: #87509c;
+}
+#services{
+    width: 100vw;
+    height: 750px;
+    background-color: #00cc99;
+}
+#get_in_touch{
+    width: 100vw;
+    height: 930px;
+    background-color: #336699;
+}
