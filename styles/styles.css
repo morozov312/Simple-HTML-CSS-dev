@@ -1,16 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
-#welcome{
+
+/* General properties */
+
+#wrapper
+{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.content
+{
+    box-sizing: border-box;
+    width: 1100px;
+    margin: auto;
+}
+
+.button
+{
+    font-weight: 600;
+
+    width: 290px;
+    height: 70px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.button:hover{
+    opacity: 0.9;
+    transition: opacity .2s linear;
+}
+
+
+
+/* "Welcome" section styling */
+
+#welcome
+{
+    display: inline-block;
+
     width: 100vw;
     height: 600px;
+
     background-color: #87509c;
 }
-#services{
+
+header
+{
+    display: flex;
+
+    height: 150px;
+    padding-top: 60px;
+
+    justify-content: space-between;
+}
+
+#logo
+{
+    width: 118px;
+    height: 37px;
+}
+
+#navigation
+{
+    display: flex;
+
+    width: 540px;
+
+    justify-content: center;
+}
+
+.nav_links
+{
+    font-size: 16px;
+    font-weight: 400;
+
+    display: flex;
+
+    width: 75px;
+    height: 30px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links:hover
+{
+    transition: background-color .2s linear;
+
+    border-radius: 5px;
+    background-color: #636;
+}
+
+#welcome_title
+{
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-top: 145px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.welcome_button
+{
+    display: flex;
+
+    margin-top: 63px;
+
+    justify-content: center;
+}
+
+#intro_button
+{
+    background-color: #eb7d4b;
+    box-shadow: 0 4px 0 0 #c63;
+}
+
+
+
+
+/* "Services" section styling */
+
+#services
+{
     width: 100vw;
     height: 750px;
-    background-color: #00cc99;
+
+    background-color: #0c9;
 }
-#get_in_touch{
+
+
+
+/* "Get_in_touch" section styling */
+
+#get_in_touch
+{
     width: 100vw;
     height: 930px;
-    background-color: #336699;
+
+    background-color: #369;
 }
