@@ -5,6 +5,8 @@
 #wrapper
 {
     font-family: 'Titillium Web', sans-serif;
+
+    color: #fff;
 }
 
 .content
@@ -28,9 +30,18 @@
     border-radius: 3px;
 }
 
-.button:hover{
-    opacity: 0.9;
+.button:hover
+{
     transition: opacity .2s linear;
+
+    opacity: .9;
+}
+
+.subtitile
+{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 
@@ -107,8 +118,6 @@ header
     margin-top: 145px;
 
     text-align: center;
-
-    color: #fff;
 }
 
 .welcome_button
@@ -135,12 +144,66 @@ header
 {
     width: 100vw;
     height: 750px;
+    padding-top: 120px;
+
+    text-align: center;
 
     background-color: #0c9;
 }
 
+#services_titile
+{
+    font-size: 40px;
+    font-weight: 700;
 
+    margin-bottom: 50px;
 
+    text-transform: uppercase;
+}
+
+#services_titile:after
+{
+    display: block;
+
+    width: 88px;
+    height: 4px;
+    margin: auto;
+    margin-top: 20px;
+
+    content: '';
+
+    opacity: .5;
+    background: #099;
+}
+
+#sections{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.icon{
+    height: 126px;
+}
+
+section{
+    width: 260px;
+    margin: 0px 20px;
+
+}
+
+.topic{
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.description{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+}
 /* "Get_in_touch" section styling */
 
 #get_in_touch
