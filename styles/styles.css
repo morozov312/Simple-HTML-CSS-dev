@@ -23,14 +23,15 @@ header
 
 #logo
 {
-    width: 118px;
-    height: 37px;
+    max-width: 118px;
+    max-height: 37px;
 }
 
 #navigation
 {
     display: flex;
-
+    margin-top: 4px;
+    
     width: 540px;
 
     justify-content: center;
@@ -40,13 +41,13 @@ header
 {
     font-size: 16px;
     font-weight: 400;
-
+    margin: 0 10px;
     display: flex;
 
     box-sizing: border-box;
     width: 75px;
     height: 30px;
-    margin: 0 3px;
+   
 
     text-decoration: none;
     text-transform: uppercase;
@@ -75,8 +76,9 @@ a#active
 {
     font-size: 42px;
     font-weight: 700;
-
-    margin-top: 145px;
+    
+    box-sizing: border-box;
+    margin-top: 85px;
 
     text-align: center;
 }
@@ -101,8 +103,8 @@ a#active
 #services
 {
     height: 750px;
-    padding-top: 120px;
-
+    padding-top: 115px;
+    box-sizing: border-box;
     text-align: center;
 
     background-color: #0c9;
@@ -168,6 +170,10 @@ section
 
     background: #336;
 }
+#conection_form{
+    box-sizing: border-box;
+    padding-top: 0;
+}
 
 input[type='text'],
 input[type='email']
@@ -177,7 +183,7 @@ input[type='email']
     box-sizing: border-box;
     width: 410px;
     height: 60px;
-    margin-top: 80px;
+    margin-top: 58px;
     padding-left: 25px;
 
     color: #fff;

@@ -21,7 +21,9 @@ html
 .content
 {
     box-sizing: border-box;
-    max-width: 1100px;
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 auto;
 }
 
@@ -62,7 +64,7 @@ html
     height: 4px;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
     content: '';
 
