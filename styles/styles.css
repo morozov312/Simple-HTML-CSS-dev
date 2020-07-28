@@ -1,84 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
 
-/* General properties */
-body,html{
-    width: 100%;
-}
-#wrapper
-{
-    font-family: 'Titillium Web', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-}
-
-.content
-{
-    box-sizing: border-box;
-    max-width: 1100px;
-    margin:  0 auto;
-}
-
-.button
-{
-    font-weight: 600;
-
-    width: 290px;
-    height: 70px;
-
-    text-transform: uppercase;
-
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-}
-
-.button:hover
-{
-    transition: opacity .2s linear;
-
-    opacity: .8;
-}
-
-.h2
-{
-    font-size: 40px;
-    font-weight: 700;
-
-    text-transform: uppercase;
-}
-
-.h2:after
-{
-    display: block;
-
-    width: 88px;
-    height: 4px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-
-    content: '';
-
-    opacity: .5;
-    background: #099;
-}
-
-.subtitile
-{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-
+@import url(general.css);
 
 /* "Welcome" section styling */
 
 #welcome
-{    
-    overflow: visible;
+{
     height: 600px;
 
     background-color: #87509c;
@@ -139,7 +66,8 @@ a#active
     background-color: #636;
 }
 
-a#active{
+a#active
+{
     transition: none;
 }
 
@@ -168,14 +96,10 @@ a#active{
     box-shadow: 0 4px 0 0 #c63;
 }
 
-
-
-
 /* "Services" section styling */
 
 #services
 {
-   
     height: 750px;
     padding-top: 120px;
 
@@ -195,8 +119,8 @@ a#active{
 
 .icon
 {
-    height: 126px;
     max-width: 100%;
+    height: 126px;
 }
 
 section
@@ -223,15 +147,13 @@ section
     margin-top: 30px;
 }
 
-
-
 /* "Get_in_touch" section styling */
 
 #get_in_touch
 {
     position: relative;
 
-   
+    box-sizing: border-box;
     height: 930px;
     padding-top: 120px;
 
@@ -273,9 +195,10 @@ input[type='text']:first-child
 {
     font-size: 18px;
     font-weight: 400;
-    max-width: 100%;
+
     box-sizing: border-box;
     width: 860px;
+    max-width: 100%;
     height: 200px;
     margin-top: 25px;
     padding-top: 23px;
@@ -336,13 +259,17 @@ input[type='submit']
 
 footer
 {
+    line-height: 40px;
+
     position: absolute;
     bottom: 0;
 
     display: flex;
 
+    box-sizing: border-box;
     width: 100%;
-    height: 110px;
+    min-height: 110px;
+    padding: 20px 0;
 
     background-color: #339;
 
@@ -350,16 +277,17 @@ footer
     justify-content: center;
 }
 
-footer li{
-     display: inline-block;
- }
+footer li
+{
+    display: inline-block;
+}
 
 .contacts
 {
     font-size: 24px;
     font-weight: 600;
+
     box-sizing: border-box;
-  
     margin: 5px 25px;
 
     text-decoration: none;
@@ -373,3 +301,5 @@ footer li{
 
     color: #3cf;
 }
+
+@import url(media.css);

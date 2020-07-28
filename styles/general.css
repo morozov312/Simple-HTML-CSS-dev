@@ -1,0 +1,78 @@
+/* General properties */
+
+body,
+html
+{
+    width: 100%;
+}
+
+#wrapper
+{
+    font-family: 'Titillium Web', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+
+    justify-content: center;
+}
+
+.content
+{
+    box-sizing: border-box;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.button
+{
+    font-weight: 600;
+
+    width: 290px;
+    height: 70px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.button:hover
+{
+    transition: opacity .2s linear;
+
+    opacity: .8;
+}
+
+.h2
+{
+    font-size: 40px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.h2:after
+{
+    display: block;
+
+    width: 88px;
+    height: 4px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    content: '';
+
+    opacity: .5;
+    background: #099;
+}
+
+.subtitile
+{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
