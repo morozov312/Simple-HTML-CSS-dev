@@ -30,24 +30,24 @@ header
 #navigation
 {
     display: flex;
-    margin-top: 4px;
-    
+
     width: 540px;
+    margin-top: 4px;
 
     justify-content: center;
 }
 
 .nav_links
 {
-    font-size: 16px;
+    font-size: .8rem;
     font-weight: 400;
-    margin: 0 10px;
+
     display: flex;
 
     box-sizing: border-box;
     width: 75px;
     height: 30px;
-   
+    margin: 0 10px;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -74,9 +74,9 @@ a#active
 
 #h1
 {
-    font-size: 42px;
+    font-size: 2.2rem;
     font-weight: 700;
-    
+
     box-sizing: border-box;
     margin-top: 85px;
 
@@ -102,9 +102,10 @@ a#active
 
 #services
 {
+    box-sizing: border-box;
     height: 750px;
     padding-top: 115px;
-    box-sizing: border-box;
+
     text-align: center;
 
     background-color: #0c9;
@@ -133,7 +134,7 @@ section
 
 .topic
 {
-    font-size: 27px;
+    font-size: 1.5rem;
     font-weight: 700;
 
     margin-top: 60px;
@@ -143,7 +144,7 @@ section
 
 .description
 {
-    font-size: 16px;
+    font-size: .8rem;
     font-weight: 300;
 
     margin-top: 30px;
@@ -170,7 +171,8 @@ section
 
     background: #336;
 }
-#conection_form{
+#conection_form
+{
     box-sizing: border-box;
     padding-top: 0;
 }
@@ -199,7 +201,7 @@ input[type='text']:first-child
 
 #message
 {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
 
     box-sizing: border-box;
@@ -226,7 +228,42 @@ input[type='submit']
     box-shadow: 0 4px 0 0 #39c;
 }
 
-@import url(plaseholder.css);
+::-webkit-input-placeholder
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    opacity: .8;
+    color: #fff;
+}
+::-moz-placeholder
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    opacity: .8;
+    color: #fff;
+}
+:-moz-placeholder
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    opacity: .8;
+    color: #fff;
+}
+:-ms-input-placeholder
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    opacity: .8;
+    color: #fff;
+}
 
 footer
 {
@@ -255,7 +292,7 @@ footer li
 
 .contacts
 {
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: 600;
 
     box-sizing: border-box;
@@ -273,4 +310,10 @@ footer li
     color: #3cf;
 }
 
-@import url(media.css);
+@media (max-width:768px)
+{
+    html
+    {
+        font-size: 0;
+    }
+}
