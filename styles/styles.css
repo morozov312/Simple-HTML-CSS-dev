@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
 
 /* General properties */
-
+body,html{
+    width: 100%;
+}
 #wrapper
 {
     font-family: 'Titillium Web', sans-serif;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #fff;
 }
 
 .content
 {
     box-sizing: border-box;
-    width: 1100px;
-    margin: auto;
+    max-width: 1100px;
+    margin:  0 auto;
 }
 
 .button
@@ -37,7 +41,7 @@
     opacity: .8;
 }
 
-.subtitile
+.h2
 {
     font-size: 40px;
     font-weight: 700;
@@ -45,7 +49,7 @@
     text-transform: uppercase;
 }
 
-.subtitile:after
+.h2:after
 {
     display: block;
 
@@ -61,7 +65,7 @@
     background: #099;
 }
 
-.sub_subtitile
+.subtitile
 {
     font-size: 18px;
     font-weight: 400;
@@ -73,10 +77,8 @@
 /* "Welcome" section styling */
 
 #welcome
-{
-    display: inline-block;
-
-    width: 100vw;
+{    
+    overflow: visible;
     height: 600px;
 
     background-color: #87509c;
@@ -114,8 +116,10 @@ header
 
     display: flex;
 
+    box-sizing: border-box;
     width: 75px;
     height: 30px;
+    margin: 0 3px;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -126,7 +130,8 @@ header
     align-items: center;
 }
 
-.nav_links:hover
+.nav_links:hover,
+a#active
 {
     transition: background-color .2s linear;
 
@@ -134,7 +139,11 @@ header
     background-color: #636;
 }
 
-#welcome_title
+a#active{
+    transition: none;
+}
+
+#h1
 {
     font-size: 42px;
     font-weight: 700;
@@ -166,7 +175,7 @@ header
 
 #services
 {
-    width: 100vw;
+   
     height: 750px;
     padding-top: 120px;
 
@@ -187,6 +196,7 @@ header
 .icon
 {
     height: 126px;
+    max-width: 100%;
 }
 
 section
@@ -221,7 +231,7 @@ section
 {
     position: relative;
 
-    width: 100vw;
+   
     height: 930px;
     padding-top: 120px;
 
@@ -240,12 +250,15 @@ section
 input[type='text'],
 input[type='email']
 {
+    font-weight: 400;
+
     box-sizing: border-box;
     width: 410px;
     height: 60px;
     margin-top: 80px;
     padding-left: 25px;
 
+    color: #fff;
     border: none;
     border-radius: 2px;
     background: #336;
@@ -258,6 +271,9 @@ input[type='text']:first-child
 
 #message
 {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 100%;
     box-sizing: border-box;
     width: 860px;
     height: 200px;
@@ -267,6 +283,7 @@ input[type='text']:first-child
 
     resize: none;
 
+    color: #fff;
     border: none;
     border-radius: 2px;
     background: #336;
@@ -286,6 +303,7 @@ input[type='submit']
     font-size: 18px;
     font-weight: 400;
 
+    opacity: .8;
     color: #fff;
 }
 ::-moz-placeholder
@@ -294,22 +312,25 @@ input[type='submit']
     font-size: 18px;
     font-weight: 400;
 
+    opacity: .8;
     color: #fff;
-} /* Firefox 19+ */
+}
 :-moz-placeholder
 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 18px;
     font-weight: 400;
 
+    opacity: .8;
     color: #fff;
-} /* Firefox 18- */
+}
 :-ms-input-placeholder
 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 18px;
     font-weight: 400;
 
+    opacity: .8;
     color: #fff;
 }
 
@@ -329,12 +350,17 @@ footer
     justify-content: center;
 }
 
+footer li{
+     display: inline-block;
+ }
+
 .contacts
 {
     font-size: 24px;
     font-weight: 600;
-
-    margin: 0 25px;
+    box-sizing: border-box;
+  
+    margin: 5px 25px;
 
     text-decoration: none;
 
