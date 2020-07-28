@@ -226,42 +226,7 @@ input[type='submit']
     box-shadow: 0 4px 0 0 #39c;
 }
 
-::-webkit-input-placeholder
-{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-
-    opacity: .8;
-    color: #fff;
-}
-::-moz-placeholder
-{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-
-    opacity: .8;
-    color: #fff;
-}
-:-moz-placeholder
-{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-
-    opacity: .8;
-    color: #fff;
-}
-:-ms-input-placeholder
-{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-
-    opacity: .8;
-    color: #fff;
-}
+@import url(plaseholder.css);
 
 footer
 {
