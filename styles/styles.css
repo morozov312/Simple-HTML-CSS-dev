@@ -166,7 +166,6 @@ a#active_link
 
 #services
 {
-    /* WIP   */
     box-sizing: border-box;
     min-height: 750px;
     padding-top: 115px;
@@ -183,6 +182,7 @@ a#active_link
     margin-top: 80px;
 
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .icon
@@ -193,7 +193,8 @@ a#active_link
 
 section
 {
-    width: 260px;
+    width: 205px;
+    overflow: hidden;
     margin: 0 20px;
 }
 
