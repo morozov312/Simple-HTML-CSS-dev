@@ -8,14 +8,18 @@
 {
     height: 600px;
 
+    transition: background-color .2s linear;
+
     background-color: #87509c;
 }
 
 header
 {
+    position: relative;
+
     display: flex;
 
-    height: 150px;
+    min-height: 150px;
     padding-top: 60px;
 
     justify-content: space-between;
@@ -26,6 +30,66 @@ header
     max-width: 118px;
     max-height: 37px;
 }
+#burger
+{
+    position: relative;
+
+    display: none;
+
+    width: 40px;
+    height: 30px;
+}
+
+#burger::before,
+#burger::after,
+#burger span
+{
+    position: absolute;
+
+    width: 40px;
+    height: 4px;
+
+    content: '';
+    transition: transform .2s linear;
+
+    background-color: #fff;
+}
+
+#burger span
+{
+    top: 13px;
+}
+
+#burger::before
+{
+    top: 0;
+}
+
+#burger::after
+{
+    bottom: 0;
+}
+
+#burger.active_burger:before
+{
+    top: 13px;
+
+    transform: rotate(-45deg);
+}
+
+#burger.active_burger::after
+{
+    bottom: 13px;
+
+    transform: rotate(45deg);
+}
+
+#burger.active_burger span
+{
+    transition: none;
+    transform: scale(0);
+}
+
 
 #navigation
 {
@@ -59,7 +123,7 @@ header
 }
 
 .nav_links:hover,
-a#active
+a#active_link
 {
     transition: background-color .2s linear;
 
@@ -67,7 +131,7 @@ a#active
     background-color: #636;
 }
 
-a#active
+a#active_link
 {
     transition: none;
 }
@@ -83,7 +147,7 @@ a#active
     text-align: center;
 }
 
-.welcome_button
+#welcome_button
 {
     display: flex;
 
@@ -102,8 +166,9 @@ a#active
 
 #services
 {
+    /* WIP   */
     box-sizing: border-box;
-    height: 750px;
+    min-height: 750px;
     padding-top: 115px;
 
     text-align: center;
@@ -155,6 +220,8 @@ section
 #get_in_touch
 {
     position: relative;
+
+    display: none; /* WIP */
 
     box-sizing: border-box;
     height: 930px;
@@ -308,12 +375,4 @@ footer li
     transition: color .2s linear;
 
     color: #3cf;
-}
-
-@media (max-width:768px)
-{
-    html
-    {
-        font-size: 0;
-    }
 }

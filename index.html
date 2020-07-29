@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/media.css">
     <title>Screw</title>
 </head>
 
@@ -17,8 +18,12 @@
 
                 <img src="styles/images/logo.png" alt="logo" id="logo">
 
+                <div id="burger">
+                    <span></span>
+                </div>
+
                 <nav id="navigation">
-                    <a href="#" class="nav_links" id="active">home</a>
+                    <a href="#" class="nav_links" id="active_link">home</a>
                     <a href="#" class="nav_links">about</a>
                     <a href="#" class="nav_links">work</a>
                     <a href="#" class="nav_links">blog</a>
@@ -32,7 +37,7 @@
                 and we build awesome websites and mobile apps.
             </h1>
 
-            <div class="welcome_button content">
+            <div id="welcome_button" class="content">
                 <button class="button" id="intro_button" type="button">Work with us!</button>
             </div>
         </div><!-- /#welcome-->
@@ -113,19 +118,21 @@
 
             <footer>
                 <ul class="content">
-                <li><a href="#" class="contacts">Facebook</a></li>
-                <li><a href="#" class="contacts">Twitter</a></li>
-                <li><a href="#" class="contacts">Google+</a></li>
-                <li><a href="#" class="contacts">LinkedIn</a></li>
-                <li><a href="#" class="contacts">Bechance</a></li>
-                <li><a href="#" class="contacts">Dribbble</a></li>
-                <li><a href="#" class="contacts">GitHub</a></li>
+                    <li><a href="#" class="contacts">Facebook</a></li>
+                    <li><a href="#" class="contacts">Twitter</a></li>
+                    <li><a href="#" class="contacts">Google+</a></li>
+                    <li><a href="#" class="contacts">LinkedIn</a></li>
+                    <li><a href="#" class="contacts">Bechance</a></li>
+                    <li><a href="#" class="contacts">Dribbble</a></li>
+                    <li><a href="#" class="contacts">GitHub</a></li>
                 </ul>
             </footer>
 
         </div><!-- /#get_in_touch-->
 
     </div><!-- /#wrapper-->
+
+    <script src="burger.js"></script>
 
 </body>
 
