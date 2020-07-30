@@ -1,3 +1,24 @@
+/* 4K */
+@media (min-width:1441px){
+    html
+    {
+        font-size: 26px;
+    }
+
+    .content{
+        max-width: 1600px;
+    }
+
+    .nav_links{
+        width: 90px;
+    }
+
+    #conection_form{
+        box-sizing: border-box;
+        padding: 0 250px;
+    }
+}
+
 /* Tablet */
 @media (max-width:1023px)
 {
