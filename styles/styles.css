@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
 
 @import url(general.css);
@@ -8,7 +15,9 @@
 {
     height: 600px;
 
-    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+         -o-transition: background-color .2s linear;
+            transition: background-color .2s linear;
 
     background-color: #87509c;
 }
@@ -17,11 +26,15 @@ header
 {
     position: relative;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     min-height: 150px;
     padding-top: 60px;
 
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -50,7 +63,11 @@ header
     height: 4px;
 
     content: '';
-    transition: transform .2s linear;
+    -webkit-transition: -webkit-transform .2s linear;
+         -o-transition:         transform .2s linear;
+            transition: -webkit-transform .2s linear;
+            transition:         transform .2s linear;
+            transition:         transform .2s linear, -webkit-transform .2s linear;
 
     background-color: #fff;
 }
@@ -74,30 +91,42 @@ header
 {
     top: 13px;
 
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 #burger.active_burger::after
 {
     bottom: 13px;
 
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 #burger.active_burger span
 {
-    transition: none;
-    transform: scale(0);
+    -webkit-transition: none;
+         -o-transition: none;
+            transition: none;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
 }
 
 
 #navigation
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     width: 540px;
     margin-top: 4px;
 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -106,9 +135,12 @@ header
     font-size: .8rem;
     font-weight: 400;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 75px;
     height: 30px;
     margin: 0 10px;
@@ -118,14 +150,20 @@ header
 
     color: #fff;
 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .nav_links:hover,
 a#active_link
 {
-    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+         -o-transition: background-color .2s linear;
+            transition: background-color .2s linear;
 
     border-radius: 5px;
     background-color: #636;
@@ -133,7 +171,9 @@ a#active_link
 
 a#active_link
 {
-    transition: none;
+    -webkit-transition: none;
+         -o-transition: none;
+            transition: none;
 }
 
 #h1
@@ -141,7 +181,8 @@ a#active_link
     font-size: 2.2rem;
     font-weight: 700;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-top: 85px;
 
     text-align: center;
@@ -149,24 +190,30 @@ a#active_link
 
 #welcome_button
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     margin-top: 63px;
 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 #intro_button
 {
     background-color: #eb7d4b;
-    box-shadow: 0 4px 0 0 #c63;
+    -webkit-box-shadow: 0 4px 0 0 #c63;
+            box-shadow: 0 4px 0 0 #c63;
 }
 
 /* "Services" section styling */
 
 #services
 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     min-height: 750px;
     padding-top: 115px;
 
@@ -177,12 +224,17 @@ a#active_link
 
 #sections
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     margin-top: 80px;
 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .icon
@@ -223,7 +275,8 @@ section
 {
     position: relative;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     min-height: 930px;
     padding-top: 120px;
 
@@ -240,7 +293,8 @@ section
 }
 #conection_form
 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-top: 0;
 }
 
@@ -249,7 +303,8 @@ input[type='email']
 {
     font-weight: 400;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 410px;
     height: 60px;
     margin-top: 58px;
@@ -271,7 +326,8 @@ input[type='text']:first-child
     font-size: 1rem;
     font-weight: 400;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 860px;
     max-width: 100%;
     height: 200px;
@@ -292,7 +348,8 @@ input[type='submit']
     margin-top: 60px;
 
     background-color: #3cf;
-    box-shadow: 0 4px 0 0 #39c;
+    -webkit-box-shadow: 0 4px 0 0 #39c;
+            box-shadow: 0 4px 0 0 #39c;
 }
 
 ::-webkit-input-placeholder
@@ -339,16 +396,23 @@ footer
     position: absolute;
     bottom: 0;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     min-height: 110px;
     padding: 20px 0;
 
     background-color: #339;
 
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -362,7 +426,8 @@ footer li
     font-size: 1.3rem;
     font-weight: 600;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 5px 25px;
 
     text-decoration: none;
@@ -372,7 +437,9 @@ footer li
 
 .contacts:hover
 {
-    transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+         -o-transition: color .2s linear;
+            transition: color .2s linear;
 
     color: #3cf;
 }
