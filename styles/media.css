@@ -1,9 +1,12 @@
+/* Tablet */
 @media (max-width:1023px)
 {
     html
     {
         font-size: 14px;
     }
+
+    /* "Welcome" section styling */
 
     #welcome
     {
@@ -16,35 +19,76 @@
         height: 60px;
     }
 
-    #sections{
-       margin-top: 20px;
+    /* "Services" section styling */
+
+    #sections
+    {
+        margin-top: 20px;
     }
 
-    section{
+    section
+    {
         width: 260px;
         margin: 20px 10px;
     }
-    
-    .topic{
+
+    .topic
+    {
         font-size: 1.5rem;
     }
 
-    .description{
-        margin-top: 20px;
+    .description
+    {
         font-size: 1.2rem;
+
+        margin-top: 20px;
     }
 
-    .subtitile{
+    .subtitile
+    {
         font-size: 1.4rem;
+    }
+
+    /* "Get_in_touch" section styling */
+
+    #get_in_touch
+    {
+        padding-top: 60px;
+    }
+
+    input[type='text']:first-child
+    {
+        margin-right: 0;
+    }
+
+    input[type='text'],
+    input[type='email']
+    {
+        float: left;
+
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #message{
+        width: 100%;
+    }
+
+    .contacts
+    {
+        font-size: 1.5rem;
     }
 }
 
+/* Mobile */
 @media (max-width:767px)
 {
     html
     {
         font-size: 10px;
     }
+
+    /* "Welcome" section styling */
 
     #burger
     {
@@ -105,36 +149,62 @@
         display: none;
     }
 
+    /* "Services" section styling */
+
     #sections
     {
         flex-direction: column;
+
         margin-top: 50px;
+
         align-items: center;
     }
 
-    section{
+    section
+    {
         margin: 25px 0;
     }
 
-    #services{
+    #services
+    {
         padding-top: 50px;
     }
 
-    .subtitile{
+    .subtitile
+    {
         font-size: 1.9rem;
     }
 
-    .icon{
+    .icon
+    {
         width: 60%;
         height: 60%;
     }
 
-    .topic{
+    .topic
+    {
         font-size: 2.3rem;
     }
 
-    .description{
+    .description
+    {
         font-size: 1.9rem;
     }
 
+    /* "Get_in_touch" section styling */
+
+    #get_in_touch
+    {
+        min-height: 1000px;
+    }
+
+    #message
+    {
+        height: 200px;
+    }
+
+    input[type='submit']
+    {
+        margin-top: 30px;
+    }
 }

@@ -193,8 +193,9 @@ a#active_link
 
 section
 {
-    width: 205px;
     overflow: hidden;
+
+    width: 205px;
     margin: 0 20px;
 }
 
@@ -222,10 +223,8 @@ section
 {
     position: relative;
 
-    display: none; /* WIP */
-
     box-sizing: border-box;
-    height: 930px;
+    min-height: 930px;
     padding-top: 120px;
 
     text-align: center;
