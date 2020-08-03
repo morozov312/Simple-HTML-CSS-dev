@@ -11,8 +11,12 @@ Used adptive and fluid development for correct display on various devices. Also 
 ## example of display on a notebook
 ![Example_1](https://github.com/morozov312/Simple-HTML-CSS-development/raw/master/src/example_1.png)
 ## example of display on a tablet
-![Example_2](https://github.com/morozov312/Simple-HTML-CSS-development/raw/master/src/example_2.png)
-## example of display on a mobile
-![Example_3](https://github.com/morozov312/Simple-HTML-CSS-development/raw/master/src/example_3.png)
-![Example_4](https://github.com/morozov312/Simple-HTML-CSS-development/raw/master/src/example_4.png)
+<p align="center">
+<img src="src/example_2.png" alt="example_2">
+ </p><br> 
+<h2> example of display on a mobile </h2>
+
+<img height="400px" align="left" src="src/example_3.png" alt="example_3">
+<img height="400px" align="right" src="src/example_4.png" alt="example_4">
+ 
 
